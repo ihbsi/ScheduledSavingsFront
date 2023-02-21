@@ -1,0 +1,9 @@
+<app-header-dash [headerTitle]="headerTitle"></app-header-dash>
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav mode="side" opened class="sidenav-module">
+        <app-sidenav-module></app-sidenav-module>
+    </mat-sidenav>
+    <mat-sidenav-content class="sidenav-content">     
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

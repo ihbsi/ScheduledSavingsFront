@@ -1,0 +1,32 @@
+.welcome-card {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: #090979;
+    color: #00d5ff;
+    size: 2rem;
+    text-align: center;
+    border: 1px solid #00d5ff; 
+}
+
+.roles-panel {
+    background-color: #090979;
+    border: 1px solid #00d5ff;    
+}
+
+.roles-title {
+    color: whitesmoke;
+    size: 1.2rem;
+}
+
+.router-link{
+    color: whitesmoke;
+    size: 1.2rem;
+}
+
+a:link {
+    text-decoration: none;
+  }
+  a:visited {
+    text-decoration: none;
+  }

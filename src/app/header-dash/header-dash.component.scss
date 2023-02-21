@@ -1,0 +1,14 @@
+.header {
+    text-align: center;
+    color: white;
+    display: flex;
+    background: linear-gradient(45deg,rgba(9,9,121,1), rgba(0,212,255,1));
+    height: 15%;
+
+    .header-center {
+        width: 100%;
+        h1 {
+            justify-self: center;
+        }
+    }
+}
