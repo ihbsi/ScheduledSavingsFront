@@ -4,7 +4,7 @@
             <mat-panel-title class="roles-title">
                 <span class="material-icons-round">
                     {{role.iconName}}
-                </span><span *ngIf="true">&nbsp;&nbsp;{{role.name}}</span>
+                </span><span *ngIf="isExpanded">&nbsp;&nbsp;{{role.name}}</span>
             </mat-panel-title>
         </mat-expansion-panel-header>
         <div *ngFor="let module of role.modules" class="nav-options">
@@ -13,7 +13,7 @@
                     {{module.iconName}}
                 </span>
             </a>
-            <a *ngIf="true" class="router-link" [routerLink]="module.linkName">
+            <a *ngIf="isExpanded" class="router-link" [routerLink]="module.linkName">
                 <span>&nbsp;&nbsp;{{module.name}}</span>
             </a>
         </div>

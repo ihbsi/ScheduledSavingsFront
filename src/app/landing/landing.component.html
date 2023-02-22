@@ -1,10 +1,10 @@
 <app-header-dash [headerTitle]="headerTitle"></app-header-dash>
-<mat-sidenav-container class="sidenav-container" [hasBackdrop]="true" autosize>
+<mat-sidenav-container class="sidenav-container" autosize>
     <mat-sidenav #sidenav mode="side" opened="true" class="sidenav-module">
-        <span class="material-icons-outlined menu-panel" (click)="sidenav.toggle()">
+        <span class="material-icons-outlined menu-panel" (click)="sidenavToggle()">
             menu
         </span>
-        <app-sidenav-module></app-sidenav-module>
+        <app-sidenav-module [isExpanded]="isExpanded"></app-sidenav-module>
     </mat-sidenav>
     <mat-sidenav-content class="sidenav-content">
         <router-outlet></router-outlet>

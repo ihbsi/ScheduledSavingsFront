@@ -1,5 +1,4 @@
 .sidenav-module {
-    width: 15%;
     background: linear-gradient(175deg, rgba(9, 9, 121, 1), rgba(0, 212, 255, 1));
     border: 0px;
 }
@@ -10,6 +9,15 @@
 
 .menu-panel {
     border: 1px solid #00d5ff;
+    width: 8vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-panel:hover{
+    cursor: pointer;
 }
 
 .sidenav-container {

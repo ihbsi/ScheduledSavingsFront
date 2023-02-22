@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class LandingComponent {
   headerTitle = "Dashboard";
+  isExpanded: boolean = false;
+
+  sidenavToggle(){
+    this.isExpanded = !this.isExpanded;
+  }
 }
