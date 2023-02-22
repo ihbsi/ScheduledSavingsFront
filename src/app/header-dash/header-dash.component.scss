@@ -1,14 +1,27 @@
 .header {
+    display: flex;
+    background: linear-gradient(45deg, rgba(9, 9, 121, 1), rgba(0, 212, 255, 1));
+    height: 15%;
+}
+
+.title {
     text-align: center;
     color: white;
-    display: flex;
-    background: linear-gradient(45deg,rgba(9,9,121,1), rgba(0,212,255,1));
-    height: 15%;
-
+    width: 100%;
     .header-center {
-        width: 100%;
         h1 {
             justify-self: center;
         }
     }
+}
+
+.welcome-card {
+    background-color: #090979;
+    color: whitesmoke;
+    size: 2rem;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid #00d5ff;
+    height: 80%;
+    margin: 10%;
 }

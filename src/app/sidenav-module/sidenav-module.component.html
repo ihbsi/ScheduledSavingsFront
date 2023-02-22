@@ -1,13 +1,21 @@
-<mat-card class="welcome-card">
-    <h3>{{sideNaveMessage | uppercase}}</h3>
-</mat-card>
-<div >
+<div>
     <mat-expansion-panel class="roles-panel">
         <mat-expansion-panel-header>
-            <mat-panel-title class="roles-title">{{role.name | uppercase}}</mat-panel-title>
+            <mat-panel-title class="roles-title">
+                <span class="material-icons-round">
+                    {{role.iconName}}
+                </span><span *ngIf="true">&nbsp;&nbsp;{{role.name}}</span>
+            </mat-panel-title>
         </mat-expansion-panel-header>
-        <div *ngFor="let module of role.modules">
-            <a class="router-link" [routerLink]="module.linkName">{{module.name}}</a><br>
+        <div *ngFor="let module of role.modules" class="nav-options">
+            <a class="router-link" [routerLink]="module.linkName">
+                <span class="material-icons-round">
+                    {{module.iconName}}
+                </span>
+            </a>
+            <a *ngIf="true" class="router-link" [routerLink]="module.linkName">
+                <span>&nbsp;&nbsp;{{module.name}}</span>
+            </a>
         </div>
     </mat-expansion-panel>
 </div>

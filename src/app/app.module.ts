@@ -8,13 +8,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material/material.module';
 import { HeaderDashComponent } from './header-dash/header-dash.component';
 import { SidenavModuleComponent } from './sidenav-module/sidenav-module.component';
+import { ScheduleSavingsComponent } from './components/schedule-savings/schedule-savings.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingComponent,
     HeaderDashComponent,
-    SidenavModuleComponent
+    SidenavModuleComponent,
+    ScheduleSavingsComponent
   ],
   imports: [
     BrowserModule,

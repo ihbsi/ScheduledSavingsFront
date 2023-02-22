@@ -6,17 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./sidenav-module.component.scss']
 })
 export class SidenavModuleComponent {
-  sideNaveMessage: string = 'Welcome to the jungle'
   role = {
-    name: 'Lunatt',
+    iconName: 'manage_accounts',
+    name: 'Tools',
     modules:
       [
         {
+          iconName: 'savings',
           name: 'Ahorro',
-          linkName: 'ahorro',
-
+          linkName: 'savings',
         },
         {
+          iconName: 'nightlight_round',
           name: 'Ciclo',
           linkName: 'ciclo'
         }

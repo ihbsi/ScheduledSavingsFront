@@ -1,9 +1,12 @@
 <app-header-dash [headerTitle]="headerTitle"></app-header-dash>
-<mat-sidenav-container class="sidenav-container">
-    <mat-sidenav mode="side" opened class="sidenav-module">
+<mat-sidenav-container class="sidenav-container" [hasBackdrop]="true" autosize>
+    <mat-sidenav #sidenav mode="side" opened="true" class="sidenav-module">
+        <span class="material-icons-outlined menu-panel" (click)="sidenav.toggle()">
+            menu
+        </span>
         <app-sidenav-module></app-sidenav-module>
     </mat-sidenav>
-    <mat-sidenav-content class="sidenav-content">     
+    <mat-sidenav-content class="sidenav-content">
         <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>
